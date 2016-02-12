@@ -1,8 +1,12 @@
+
 .metadata
 *.class
 
-# Package Files #
 *.jar
 *.war
 *.ear
 
+.recommenders/
+.classpath
+.project
+Index.java
