@@ -25,8 +25,11 @@ public class Solution {
       return;
     }
 
+    // i is the beginning of unused string
+    // Note: i is bounded by end of s and length of 3
     for (int i = sb.length() - pos + 1; i <= s.length() && i < sb.length() - pos + 1 + 4; i++) {
       String ss = s.substring(sb.length() - pos, i);
+      // Note: Get rid of string start with 0
       if (s.charAt(sb.length() - pos) == '0' && i > sb.length() - pos + 1) {
         continue;
       }
