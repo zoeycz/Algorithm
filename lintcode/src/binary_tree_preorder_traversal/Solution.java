@@ -8,7 +8,7 @@ public class Solution {
    * 
    * Source: http://www.lintcode.com/en/problem/binary-tree-preorder-traversal/
    * 
-   * Complexity: Time: O(n), Space: O(n)
+   * Complexity: Time: O(n), Space: O(n), Extra Space: O(log n)
    * 
    * @param root: The root of binary tree.
    * @return: Preorder in ArrayList which contains node values.
@@ -19,6 +19,7 @@ public class Solution {
     return result;
   }
 
+  // T(n) = T(l) + T(r) + O(1) = 2*T(n/2) + O(1) => T(n) = O(n)
   private void helper(TreeNode root, ArrayList<Integer> result) {
     if (root == null) {
       return;

@@ -9,7 +9,7 @@ public class Solution3 {
    * 
    * Source: http://www.lintcode.com/en/problem/binary-tree-preorder-traversal/
    * 
-   * Complexity: Time: O(n), Space: O(n)
+   * Complexity: Time: O(n), Space: O(n), Extra Space: O(log n)
    * 
    * @param root: The root of binary tree.
    * @return: Preorder in ArrayList which contains node values.
