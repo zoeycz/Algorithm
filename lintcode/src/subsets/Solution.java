@@ -7,7 +7,7 @@ public class Solution {
   /**
    * Source: http://www.lintcode.com/en/problem/subsets/
    * 
-   * Complexity: Time: O(2^n) Space: O(n*n!)
+   * Complexity: Time: O(n!) Space: O(2^n) Extra Space: O(n)
    * 
    * @param S: A set of numbers.
    * @return: A list of lists. All valid subsets.
@@ -23,6 +23,8 @@ public class Solution {
     return result;
   }
 
+  // T(n) = n*T(n-1) => T(n) = O(n!)
+  // S(n) = O(n) pointers + O(2^n) results
   private void subsetsHelper(ArrayList<ArrayList<Integer>> result, ArrayList<Integer> list,
       int[] nums, int pos) {
     // Note: Don't forget to new an array. Java is parsing in reference.

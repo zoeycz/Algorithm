@@ -7,7 +7,7 @@ public class Solution2 {
   /**
    * Source: http://www.lintcode.com/en/problem/subsets/
    * 
-   * Complexity: Time: O(n*2^n) Space: O(n)
+   * Complexity: Time: O(n*2^n) Space: O(2^n) Extra Space: O(1)
    * 
    * @param S: A set of numbers.
    * @return: A list of lists. All valid subsets.
@@ -22,9 +22,9 @@ public class Solution2 {
       // Add combination of all 2^n into result
       for (int i = 0; i < (1 << n); i++) {
 
-        // A list of i length
         ArrayList<Integer> list = new ArrayList<Integer>();
 
+        // Use j to test all n bits, if the number on that bits exits in current combination
         // Note: Use 'j<n' instead of 'j<i'
         for (int j = 0; j < n; j++) {
 

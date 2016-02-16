@@ -2,7 +2,7 @@ package classic_binary_search;
 
 public class Solution {
   /**
-   * Complexity: Time: O(log n), Space: O(1)
+   * Complexity: Time: O(log n), Space: O(n), Extra Space: O(1)
    * 
    * @param nums: The integer array.
    * @param target: Target to find.
