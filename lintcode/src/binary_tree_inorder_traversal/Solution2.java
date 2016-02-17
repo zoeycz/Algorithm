@@ -16,6 +16,8 @@ public class Solution2 {
 
     Stack<TreeNode> stack = new Stack<TreeNode>();
     TreeNode cur = root;
+
+    // Note: push left not in main loop
     // Initialize stack, so that while loop can take stack size as end condition
     while (cur != null) {
       stack.push(cur);
