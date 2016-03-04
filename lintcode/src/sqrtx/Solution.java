@@ -17,6 +17,7 @@ public class Solution {
       return 0;
     }
 
+    // Note: Using long instead of int
     long start = 1;
     long end = x;
 
@@ -30,6 +31,7 @@ public class Solution {
     }
 
     if (end * end <= x) {
+      // Note: convert back to int
       return (int) end;
     }
 
