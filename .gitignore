@@ -10,4 +10,4 @@
 .classpath
 .project
 Index.java
-Test.java
+Test*.java

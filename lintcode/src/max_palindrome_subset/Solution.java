@@ -16,7 +16,6 @@ public class Solution {
       return f[start][end];
     }
     if (start > end) {
-      f[start][end] = rst;
       return rst;
     }
     if (start == end) {
